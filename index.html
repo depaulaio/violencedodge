@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Violence Dodge</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/img/logo.png">
+</head>
+<body>
+  <div class="timer-container">
+    <h1 id="timerText">1 Minuto Para a Polícia Chegar</h1>
+    <div id="timer">00:10</div>
+    <button id="startBtn">Iniciar</button>
+  </div>
+
+  <div class="overlay" id="fimDeGameSobreposicao" style="display: none;">
+    <h2 id="textEnd">A polícia chegou, o que vai fazer?</h2>
+    <img class="sirene-img" src=".//img/sirene_poli_art.gif" alt="Sirene da Polícia">
+    <div class="perguntaFinal-container">
+      <button class="perguntaFinal" id="botaoAgressorPreso">Prender o agressor</button>
+      <button class="perguntaFinal" id="passarPanoBandido">Vai passar pano pra bandido?</button>
+    </div>
+    <img src="img/img_vitoria_e_derrota/tela_da_vitoria_jogo.png" alt="" id="winScreen">
+    <img src="img/img_vitoria_e_derrota/tela_de_game_over (2).png" alt="" id="gameOverScreen">
+  </div>
+
+  <dialog id="dialog-win">
+    <img src="img/img_vitoria_e_derrota/tela_da_vitoria_jogo.png" alt="">
+
+  </dialog>
+
+  </div>
+
+  <div class="background">
+    <div id="divHomem" class="homem">
+      <img src="img/man_art.png" alt="Homem" class="img-homem">
+    </div> 
+    <img src="img/mulher_e_tel_art.png" alt="Mulher" id="divMulher" class='mulher'>
+    <div id="projectile" class="projectile"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
